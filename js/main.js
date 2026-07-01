@@ -54,6 +54,19 @@ function isValidEmail(value) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 }
 
+function isValidPhone(value) {
+    const digits = value.replace(/\D/g, '');
+    return digits.length >= 7 && digits.length <= 15;
+}
+
+function getWeb3FormsKey(form) {
+    const fromConfig = window.MAZA_SITE_CONFIG?.web3formsAccessKey?.trim();
+    const fromForm = form.dataset.web3formsKey?.trim();
+    const key = fromConfig || fromForm || '';
+    if (!key || key === 'CONFIGURA_TU_ACCESS_KEY' || key === 'TU_ACCESS_KEY') return '';
+    return key;
+}
+
 function setFieldError(group, message) {
     if (!group) return;
     const errorEl = group.querySelector('.field-error');
@@ -87,6 +100,7 @@ function validateContactForm(form) {
 
     const nombre = form.nombre.value.trim();
     const email = form.email.value.trim();
+    const telefono = form.telefono.value.trim();
     const mensaje = form.mensaje.value.trim();
     let valid = true;
 
@@ -100,6 +114,14 @@ function validateContactForm(form) {
         valid = false;
     } else if (!isValidEmail(email)) {
         setFieldError(form.querySelector('[data-field="email"]'), 'El correo no tiene un formato válido.');
+        valid = false;
+    }
+
+    if (!telefono) {
+        setFieldError(form.querySelector('[data-field="telefono"]'), 'Escribe un número de contacto.');
+        valid = false;
+    } else if (!isValidPhone(telefono)) {
+        setFieldError(form.querySelector('[data-field="telefono"]'), 'El teléfono debe tener entre 7 y 15 dígitos.');
         valid = false;
     }
 
@@ -124,6 +146,8 @@ function initContactForm() {
     const form = document.getElementById('contact-form');
     if (!form) return;
 
+    const submitBtn = form.querySelector('#contact-submit');
+
     form.querySelectorAll('input, textarea, select').forEach((field) => {
         field.addEventListener('input', () => {
             const group = field.closest('.form-group');
@@ -134,46 +158,86 @@ function initContactForm() {
         });
     });
 
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
         e.preventDefault();
         if (!validateContactForm(form)) return;
 
         const nombre = form.nombre.value.trim();
         const email = form.email.value.trim();
+        const telefono = form.telefono.value.trim();
         const servicio = form.servicio.value;
         const mensaje = form.mensaje.value.trim();
+        const accessKey = getWeb3FormsKey(form);
+        const notifyEmail = window.MAZA_SITE_CONFIG?.notifyEmail
+            || form.dataset.notifyEmail
+            || 'contacto@mazafinlab.com';
 
-        const whatsappRaw = (form.dataset.whatsapp || '').trim();
-        const emailTo = (form.dataset.email || 'contacto@mazafinlab.com').trim();
-        const hasWhatsapp = whatsappRaw && whatsappRaw !== 'TU_NUMERO';
-
+        const subject = `Consulta web — ${servicio}`;
         const bodyText =
-            `Hola, soy ${nombre}.\n` +
+            `Nombre: ${nombre}\n` +
             `Email: ${email}\n` +
-            `Servicio de interés: ${servicio}\n\n` +
-            `${mensaje}`;
+            `Teléfono: ${telefono}\n` +
+            `Servicio: ${servicio}\n\n` +
+            `Mensaje:\n${mensaje}`;
 
-        if (hasWhatsapp) {
-            const text = encodeURIComponent(bodyText);
-            window.open(`https://wa.me/${whatsappRaw}?text=${text}`, '_blank', 'noopener');
+        if (!accessKey) {
+            const mailSubject = encodeURIComponent(subject);
+            const mailBody = encodeURIComponent(bodyText);
+            window.location.href = `mailto:${notifyEmail}?subject=${mailSubject}&body=${mailBody}`;
             showFormFeedback(
                 form,
-                'Te redirigimos a WhatsApp con tu mensaje. Si no se abrió, usa el botón de contacto.',
-                'success'
-            );
-        } else {
-            const subject = encodeURIComponent(`Consulta web — ${servicio}`);
-            const body = encodeURIComponent(bodyText);
-            window.location.href = `mailto:${emailTo}?subject=${subject}&body=${body}`;
-            showFormFeedback(
-                form,
-                `Tu cliente de correo se abrirá para enviar a ${emailTo}. Si no aparece, escríbenos directamente.`,
+                'Configura Web3Forms para recibir correos automáticos. Por ahora se abrió tu cliente de correo.',
                 'info'
             );
+            return;
         }
 
-        form.reset();
-        clearFormErrors(form);
+        const payload = new FormData();
+        payload.append('access_key', accessKey);
+        payload.append('name', nombre);
+        payload.append('email', email);
+        payload.append('phone', telefono);
+        payload.append('subject', subject);
+        payload.append('message', bodyText);
+        payload.append('from_name', 'Sitio Maza FinLab');
+        payload.append('replyto', email);
+
+        if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Enviando...';
+        }
+
+        try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: payload,
+                headers: { Accept: 'application/json' }
+            });
+            const result = await response.json();
+
+            if (!response.ok || !result.success) {
+                throw new Error(result.message || 'No se pudo enviar el mensaje.');
+            }
+
+            form.reset();
+            clearFormErrors(form);
+            showFormFeedback(
+                form,
+                '¡Mensaje enviado! Revisaremos tu consulta y te contactaremos pronto.',
+                'success'
+            );
+        } catch (error) {
+            showFormFeedback(
+                form,
+                error.message || 'Error al enviar. Escríbenos por WhatsApp o a contacto@mazafinlab.com.',
+                'error'
+            );
+        } finally {
+            if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Enviar consulta';
+            }
+        }
     });
 }
 

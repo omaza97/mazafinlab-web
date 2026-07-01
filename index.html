@@ -471,15 +471,27 @@
                 </div>
 
                 <div class="contact-form-wrap cinematic-glass reveal" data-reveal style="--reveal-delay: 100ms">
-                <form id="contact-form" class="contact-form" data-whatsapp="573058044312" data-email="contacto@mazafinlab.com" novalidate>
+                <form
+                    id="contact-form"
+                    class="contact-form"
+                    data-web3forms-key="CONFIGURA_TU_ACCESS_KEY"
+                    data-notify-email="contacto@mazafinlab.com"
+                    novalidate
+                >
+                    <p class="form-hint">Completa el formulario y te responderemos por correo a la brevedad.</p>
                     <div class="form-group" data-field="nombre">
                         <label for="nombre">Nombre completo *</label>
-                        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" autocomplete="name">
+                        <input type="text" id="nombre" name="name" required placeholder="Tu nombre" autocomplete="name">
                         <span class="field-error" role="alert"></span>
                     </div>
                     <div class="form-group" data-field="email">
                         <label for="email">Email *</label>
                         <input type="email" id="email" name="email" required placeholder="tu@email.com" autocomplete="email">
+                        <span class="field-error" role="alert"></span>
+                    </div>
+                    <div class="form-group" data-field="telefono">
+                        <label for="telefono">Teléfono / WhatsApp *</label>
+                        <input type="tel" id="telefono" name="phone" required placeholder="Ej: 300 123 4567" autocomplete="tel">
                         <span class="field-error" role="alert"></span>
                     </div>
                     <div class="form-group" data-field="servicio">
@@ -498,7 +510,7 @@
                         <span class="field-error" role="alert"></span>
                     </div>
                     <div id="form-feedback" class="form-feedback" role="status" hidden></div>
-                    <button type="submit" class="btn btn-primary btn-shine">Enviar mensaje</button>
+                    <button type="submit" class="btn btn-primary btn-shine" id="contact-submit">Enviar consulta</button>
                 </form>
                 </div>
             </div>
@@ -548,6 +560,7 @@
         </div>
     </footer>
 
+    <script src="js/site-config.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
