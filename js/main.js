@@ -170,7 +170,7 @@ function initContactForm() {
         const accessKey = getWeb3FormsKey(form);
         const notifyEmail = window.MAZA_SITE_CONFIG?.notifyEmail
             || form.dataset.notifyEmail
-            || 'contacto@mazafinlab.com';
+            || 'oscar.maza.martinez1997@gmail.com';
 
         const subject = `Consulta web — ${servicio}`;
         const bodyText =
@@ -229,7 +229,7 @@ function initContactForm() {
         } catch (error) {
             showFormFeedback(
                 form,
-                error.message || 'Error al enviar. Escríbenos por WhatsApp o a contacto@mazafinlab.com.',
+                error.message || 'Error al enviar. Escríbenos por WhatsApp o a oscar.maza.martinez1997@gmail.com.',
                 'error'
             );
         } finally {

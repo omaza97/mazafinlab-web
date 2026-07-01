@@ -1,10 +1,8 @@
 /**
  * Configuración del formulario de contacto (Web3Forms).
- * 1. Entra a https://web3forms.com
- * 2. Registra contacto@mazafinlab.com (o tu correo)
- * 3. Copia el Access Key y pégalo abajo.
+ * Los mensajes del sitio llegan al correo vinculado en web3forms.com.
  */
 window.MAZA_SITE_CONFIG = {
-    web3formsAccessKey: 'CONFIGURA_TU_ACCESS_KEY',
-    notifyEmail: 'contacto@mazafinlab.com'
+    web3formsAccessKey: '7de4ede9-4229-48a7-9f96-28e9ca64245e',
+    notifyEmail: 'oscar.maza.martinez1997@gmail.com'
 };
