@@ -1491,6 +1491,23 @@ body {
     color: #f0a0a8;
 }
 
+.form-privacy-note {
+    font-size: 0.8rem;
+    color: var(--text-muted, #8a9bb0);
+    line-height: 1.45;
+    margin: 0 0 12px;
+}
+
+.form-privacy-note a {
+    color: var(--text-secondary, #c5d0de);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.form-privacy-note a:hover {
+    color: #fff;
+}
+
 .btn:disabled {
     opacity: 0.65;
     cursor: not-allowed;
