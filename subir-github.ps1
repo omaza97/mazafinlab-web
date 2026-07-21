@@ -60,4 +60,4 @@ Write-Host ""
 Write-Host "Listo. Activa GitHub Pages:" -ForegroundColor Green
 Write-Host "  Repo → Settings → Pages → Branch: main → Folder: / (root) → Save"
 Write-Host "  URL temporal: https://TU_USUARIO.github.io/NOMBRE-REPO/"
-Write-Host "  Dominio (cuando DNS este listo): https://www.mazafinlab.com"
+Write-Host "  Dominio: https://mazafl.com"
