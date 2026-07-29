@@ -1,571 +1,841 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Maza FinLab — Desarrollo de software, sitios web y automatizaciones con inteligencia artificial. Empresa de tecnología en Cartagena de Indias, Colombia.">
-    <meta name="keywords" content="desarrollo software cartagena, páginas web colombia, automatización IA, software a medida">
-    <meta name="author" content="Maza FinLab SAS">
-    <title>Maza FinLab — Desarrollo de Software con IA | Cartagena</title>
-    <link rel="canonical" href="https://mazafl.com/">
-    <meta name="robots" content="index, follow">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="es_CO">
-    <meta property="og:site_name" content="Maza FinLab">
-    <meta property="og:title" content="Maza FinLab — Desarrollo de Software con IA | Cartagena">
-    <meta property="og:description" content="Desarrollo de software, sitios web y automatizaciones con inteligencia artificial. Empresa de tecnología en Cartagena de Indias, Colombia.">
-    <meta property="og:url" content="https://mazafl.com/">
-    <meta property="og:image" content="https://mazafl.com/assets/logo-maza-finlab.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Maza FinLab — Desarrollo de Software con IA">
-    <meta name="twitter:description" content="Software que resuelve problemas reales. Desarrollo web, apps y automatización con IA en Cartagena, Colombia.">
-    <meta name="twitter:image" content="https://mazafl.com/assets/logo-maza-finlab.jpg">
-    <link rel="icon" href="assets/logo-maza-finlab.jpg" type="image/jpeg">
-    <link rel="apple-touch-icon" href="assets/logo-maza-finlab.jpg">
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Maza FinLab SAS",
-        "url": "https://mazafl.com",
-        "email": "contacto@mazafl.com",
-        "telephone": "+57-324-520-9070",
-        "image": "https://mazafl.com/assets/logo-maza-finlab.jpg",
-        "description": "Desarrollo de software, sitios web y automatizaciones con inteligencia artificial en Cartagena, Colombia.",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Cartagena de Indias",
-            "addressRegion": "Bolívar",
-            "addressCountry": "CO"
-        },
-        "taxID": "901936885",
-        "areaServed": "CO",
-        "priceRange": "$$"
-    }
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Maza FinLab — Desarrollo de software, sitios web y automatizaciones con inteligencia artificial. Empresa de tecnología en Cartagena de Indias, Colombia.">
+  <meta name="keywords" content="desarrollo software cartagena, páginas web colombia, automatización IA, software a medida">
+  <meta name="author" content="Maza FinLab SAS">
+  <meta name="theme-color" content="#071625">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mazafl.com/">
+  <title>Maza FinLab — Desarrollo de Software con IA | Cartagena</title>
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:site_name" content="Maza FinLab">
+  <meta property="og:title" content="Maza FinLab — Desarrollo de Software con IA | Cartagena">
+  <meta property="og:description" content="Desarrollo de software, sitios web y automatizaciones con inteligencia artificial. Empresa de tecnología en Cartagena de Indias, Colombia.">
+  <meta property="og:url" content="https://mazafl.com/">
+  <meta property="og:image" content="https://mazafl.com/assets/logo-maza-finlab.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Maza FinLab — Desarrollo de Software con IA">
+  <meta name="twitter:description" content="Software que resuelve problemas reales. Desarrollo web, apps y automatización con IA en Cartagena, Colombia.">
+  <meta name="twitter:image" content="https://mazafl.com/assets/logo-maza-finlab.jpg">
+  <link rel="icon" href="assets/logo-maza-finlab.jpg" type="image/jpeg">
+  <link rel="apple-touch-icon" href="assets/logo-maza-finlab.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Maza FinLab SAS",
+    "url": "https://mazafl.com",
+    "email": "contacto@mazafl.com",
+    "telephone": "+57-324-520-9070",
+    "image": "https://mazafl.com/assets/logo-maza-finlab.jpg",
+    "description": "Desarrollo de software, sitios web y automatizaciones con inteligencia artificial en Cartagena, Colombia.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Cartagena de Indias",
+      "addressRegion": "Bolívar",
+      "addressCountry": "CO"
+    },
+    "taxID": "901936885",
+    "areaServed": "CO",
+    "priceRange": "$$"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles-v6.css">
+  <link rel="stylesheet" href="css/styles-v6-overrides.css">
 </head>
-<body class="site-cinematic">
+<body>
 
-    <div class="site-grain" aria-hidden="true"></div>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-    <!-- Header -->
-    <header class="header header-cinematic">
-        <div class="header-pill">
-            <nav class="nav">
-                <a href="#inicio" class="nav-logo">
-                    <img src="assets/logo-maza-finlab.jpg" alt="Maza FinLab">
-                    <span>Maza FinLab</span>
-                </a>
-                <ul id="nav-menu" class="nav-links">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#proceso">Proceso</a></li>
-                    <li><a href="#productos">Productos</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="#contacto" class="btn btn-primary btn-shine btn-nav-cta">Cotizar</a></li>
-                </ul>
-                <button type="button" class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
-                    <span class="nav-toggle-icon" aria-hidden="true">
-                        <svg class="nav-toggle-svg nav-toggle-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                            <line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/>
-                        </svg>
-                        <svg class="nav-toggle-svg nav-toggle-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                            <line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/>
-                        </svg>
-                    </span>
-                </button>
-            </nav>
-        </div>
-    </header>
+  <header class="site-header" id="inicio">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Maza FinLab, inicio">
+        <img src="assets/logo-maza-finlab.jpg" alt="Maza FinLab">
+        <span class="brand-wordmark brand-wordmark-simple">
+          <strong>Maza FinLab</strong>
+        </span>
+      </a>
 
-    <!-- Hero — Cinematic Split -->
-    <section id="inicio" class="hero hero-cinematic">
-        <div class="hero-grain" aria-hidden="true"></div>
-        <div class="hero-split">
-            <div class="hero-split-brand">
-                <div class="hero-split-copy">
-                    <div class="hero-line-accent reveal" data-reveal style="--reveal-delay: 60ms"></div>
-                    <h1 class="reveal" data-reveal style="--reveal-delay: 100ms">
-                        Software que<br><em>resuelve</em><br>problemas reales
-                    </h1>
-                    <p class="hero-subtitle reveal" data-reveal style="--reveal-delay: 180ms">
-                        Desarrollamos sitios web, aplicaciones y automatizaciones con metodología profesional
-                        e inteligencia artificial. Primero definimos, luego construimos.
-                    </p>
-                    <div class="hero-rotator reveal" data-reveal style="--reveal-delay: 240ms" aria-live="polite">
-                        <span class="hero-rotator-prefix">Tú puedes</span>
-                        <span class="hero-rotator-text" id="hero-rotator-text">automatizar procesos con IA</span>
-                    </div>
-                    <div class="hero-actions reveal" data-reveal style="--reveal-delay: 300ms">
-                        <a href="#contacto" class="btn btn-primary btn-shine">Solicitar cotización</a>
-                        <a href="#servicios" class="btn btn-outline">Ver servicios</a>
-                    </div>
-                </div>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#metodo">Método</a>
+        <a href="#empresa">Empresa</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a class="button button-small button-primary header-cta" href="#contacto">Evaluar mi proyecto</a>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <canvas class="hero-network" id="hero-network" aria-hidden="true"></canvas>
+      <div class="hero-future-field" aria-hidden="true">
+        <i></i><i></i><i></i>
+        <span></span><span></span><span></span>
+      </div>
+
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span></span> Ingeniería de software aplicada</div>
+
+          <h1>Tu operación, convertida en un <em>sistema claro.</em></h1>
+
+          <p class="hero-lead">
+            Diseñamos sistemas empresariales, aplicaciones web y herramientas de ingeniería digital
+            a partir de cómo funciona realmente cada proceso.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#proyectos">
+              Explorar el ecosistema
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+            </a>
+            <a class="button button-secondary" href="#contacto">Solicitar diagnóstico</a>
+          </div>
+
+          <div class="hero-points" aria-label="Principios de trabajo">
+            <div>
+              <strong>01</strong>
+              <span>Comprender el proceso</span>
             </div>
-            <div class="hero-split-blend" aria-hidden="true"></div>
-            <div class="hero-split-visual reveal" data-reveal style="--reveal-delay: 160ms">
-                <img
-                    src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&q=85&auto=format&fit=crop"
-                    alt="Desarrollo de software profesional"
-                    loading="eager"
-                >
+            <div>
+              <strong>02</strong>
+              <span>Resolver lo esencial</span>
             </div>
+            <div>
+              <strong>03</strong>
+              <span>Construir para crecer</span>
+            </div>
+          </div>
         </div>
+
+        <div class="hero-product reveal">
+          <div class="product-window">
+            <div class="window-bar">
+              <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+              <span>MAZA HUB · Centro de operaciones</span>
+              <b><i></i> En desarrollo activo</b>
+            </div>
+
+            <div class="window-media" data-lightbox role="button" tabindex="0" aria-label="Ampliar captura de MAZA HUB">
+              <img src="assets/promo/ui-hub.png" alt="Interfaz de MAZA HUB">
+              <span class="media-zoom-hint" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
+              </span>
+            </div>
+
+            <div class="window-footer">
+              <div>
+                <small>Plataforma interna</small>
+                <strong>Clientes, proyectos y documentos en un solo flujo.</strong>
+              </div>
+              <span>MAZA HUB</span>
+            </div>
+          </div>
+
+          <div class="hero-note hero-note-top">
+            <span>Producto especializado</span>
+            <strong>Structural Steel Hub</strong>
+          </div>
+
+          <div class="hero-note hero-note-bottom">
+            <span>Caso empresarial</span>
+            <strong>Sistema 4 Grados</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="container trust-strip reveal">
+        <p>Capacidades principales</p>
+        <div>
+          <span>Software a medida</span>
+          <span>Automatización</span>
+          <span>Desarrollo web</span>
+          <span>Gestión documental</span>
+          <span>Plugins CAD/BIM</span>
+        </div>
+      </div>
     </section>
 
-    <!-- Franja tecnológica (estilo integraciones n8n) -->
-    <section class="marquee-section marquee-cinematic" aria-label="Tecnologías y capacidades">
-        <div class="marquee">
-            <div class="marquee-track">
-                <span>Desarrollo Web</span><span>Software a Medida</span><span>Automatización IA</span>
-                <span>APIs e Integraciones</span><span>Sistemas de Gestión</span><span>Bots de Trading</span>
-                <span>Metodología Ágil</span><span>Documentación Profesional</span><span>Node.js</span>
-                <span>Dashboards</span><span>E-commerce</span><span>Consultoría Tech</span>
-            </div>
-            <div class="marquee-track" aria-hidden="true">
-                <span>Desarrollo Web</span><span>Software a Medida</span><span>Automatización IA</span>
-                <span>APIs e Integraciones</span><span>Sistemas de Gestión</span><span>Bots de Trading</span>
-                <span>Metodología Ágil</span><span>Documentación Profesional</span><span>Node.js</span>
-                <span>Dashboards</span><span>E-commerce</span><span>Consultoría Tech</span>
-            </div>
+    <section class="section services-section" id="servicios">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="eyebrow eyebrow-dark"><span></span> Servicios</div>
+            <h2>Soluciones construidas alrededor de tu proceso.</h2>
+          </div>
+          <p>
+            Cada proyecto inicia con un análisis del trabajo actual, la información utilizada,
+            los usuarios y los resultados que necesitas controlar.
+          </p>
         </div>
+
+        <div class="services-grid services-grid-v6">
+          <article class="service-card service-card-v6 reveal">
+            <div class="service-top">
+              <span class="service-index">01</span>
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M8 9l-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/>
+                </svg>
+              </div>
+            </div>
+            <h3>Software a medida</h3>
+            <p>
+              Diseñamos sistemas web o de escritorio alrededor de la operación real de tu empresa,
+              con módulos escalables, permisos y trazabilidad.
+            </p>
+            <span class="service-includes">Soluciones habituales</span>
+            <ul class="service-offerings">
+              <li>CRM, clientes y seguimiento comercial</li>
+              <li>Proyectos, órdenes de trabajo y estados</li>
+              <li>Dashboards, portales y sistemas internos</li>
+              <li>APIs e integración con otras plataformas</li>
+            </ul>
+          </article>
+
+          <article class="service-card service-card-v6 reveal">
+            <div class="service-top">
+              <span class="service-index">02</span>
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="4"/>
+                  <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9L7 7M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/>
+                </svg>
+              </div>
+            </div>
+            <h3>Automatización empresarial</h3>
+            <p>
+              Conectamos tareas, datos y responsables para reducir trabajo manual, errores
+              y tiempos de respuesta sin perder supervisión.
+            </p>
+            <span class="service-includes">Soluciones habituales</span>
+            <ul class="service-offerings">
+              <li>Flujos de aprobación y notificaciones</li>
+              <li>Generación automática de documentos</li>
+              <li>Reportes, alertas y tareas programadas</li>
+              <li>Asistentes e integraciones con IA</li>
+            </ul>
+          </article>
+
+          <article class="service-card service-card-v6 reveal">
+            <div class="service-top">
+              <span class="service-index">03</span>
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9"/>
+                  <path d="M3 12h18M12 3c3 3 4 6 4 9s-1 6-4 9c-3-3-4-6-4-9s1-6 4-9z"/>
+                </svg>
+              </div>
+            </div>
+            <h3>Desarrollo web</h3>
+            <p>
+              Creamos experiencias web rápidas, adaptables y alineadas con objetivos comerciales,
+              desde presencia corporativa hasta plataformas operativas.
+            </p>
+            <span class="service-includes">Soluciones habituales</span>
+            <ul class="service-offerings">
+              <li>Sitios corporativos y landing pages</li>
+              <li>Páginas de producto y catálogos</li>
+              <li>Portales privados para clientes</li>
+              <li>Aplicaciones web y comercio electrónico</li>
+            </ul>
+          </article>
+
+          <article class="service-card service-card-v6 reveal">
+            <div class="service-top">
+              <span class="service-index">04</span>
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 3h10l4 4v14H5zM15 3v5h4M8 13h8M8 17h6"/>
+                </svg>
+              </div>
+            </div>
+            <h3>Gestión documental</h3>
+            <p>
+              Centralizamos la creación, clasificación y consulta de documentos empresariales
+              para que cada versión, responsable y estado permanezca controlado.
+            </p>
+            <span class="service-includes">Software y capacidades</span>
+            <ul class="service-offerings">
+              <li>Fichas, cotizaciones, propuestas y contratos</li>
+              <li>Plantillas y generación de archivos</li>
+              <li>Repositorio, búsquedas y control de versiones</li>
+              <li>MAZA HUB · Generador de documentos</li>
+            </ul>
+          </article>
+
+          <article class="service-card service-card-v6 reveal">
+            <div class="service-top">
+              <span class="service-index">05</span>
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3l8 4.5v9L12 21l-8-4.5v-9zM4 7.5l8 4.5 8-4.5M12 12v9"/>
+                </svg>
+              </div>
+            </div>
+            <h3>Ingeniería digital</h3>
+            <p>
+              Desarrollamos herramientas especializadas dentro de entornos técnicos para
+              acelerar modelado, documentación, coordinación y fabricación.
+            </p>
+            <span class="service-includes">Software y capacidades</span>
+            <ul class="service-offerings">
+              <li>Plugins para CAD, BIM y Autodesk</li>
+              <li>Listas, numeración y exportación técnica</li>
+              <li>Automatización .NET, WPF y APIs</li>
+              <li>Structural Steel Hub · Advance Steel</li>
+            </ul>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Servicios -->
-    <section id="servicios" class="section section-cinematic section-services">
-        <div class="container section-services-inner">
-            <div class="section-header section-header--cinematic reveal" data-reveal>
-                <div class="section-line-accent"></div>
-                <span class="section-label">Lo que hacemos</span>
-                <h2 class="section-title">Servicios de desarrollo</h2>
-                <p class="section-desc">
-                    Soluciones tecnológicas para empresas y emprendedores que buscan calidad,
-                    claridad en el alcance y resultados medibles.
-                </p>
-            </div>
-
-            <div class="focus-rail-wrap" data-rail-wrap>
-            <div class="focus-rail" data-focus-rail>
-                <article class="focus-card service-card" data-theme="web">
-                    <div class="focus-card-bg" aria-hidden="true"></div>
-                    <div class="focus-card-head">
-                        <h3>Diseño y Desarrollo Web</h3>
-                    </div>
-                    <div class="focus-card-glass">
-                        <ul>
-                            <li>Sitios corporativos</li>
-                            <li>Landing pages</li>
-                            <li>E-commerce</li>
-                        </ul>
-                        <p>Sitios corporativos, landing pages y tiendas en línea con diseño profesional y responsive.</p>
-                    </div>
-                </article>
-
-                <article class="focus-card service-card" data-theme="software">
-                    <div class="focus-card-bg" aria-hidden="true"></div>
-                    <div class="focus-card-head">
-                        <h3>Software a Medida</h3>
-                    </div>
-                    <div class="focus-card-glass">
-                        <ul>
-                            <li>Sistemas de gestión</li>
-                            <li>Dashboards y portales</li>
-                            <li>APIs e integraciones</li>
-                        </ul>
-                        <p>Aplicaciones diseñadas para los procesos específicos de tu negocio.</p>
-                    </div>
-                </article>
-
-                <article class="focus-card service-card" data-theme="ai">
-                    <div class="focus-card-bg" aria-hidden="true"></div>
-                    <div class="focus-card-head">
-                        <h3>Automatización con IA</h3>
-                    </div>
-                    <div class="focus-card-glass">
-                        <ul>
-                            <li>Automatización de procesos</li>
-                            <li>Bots y asistentes</li>
-                            <li>Análisis de datos</li>
-                        </ul>
-                        <p>IA en tus flujos de trabajo para ahorrar tiempo y reducir errores.</p>
-                    </div>
-                </article>
-
-                <article class="focus-card service-card" data-theme="consulting">
-                    <div class="focus-card-bg" aria-hidden="true"></div>
-                    <div class="focus-card-head">
-                        <h3>Consultoría Tecnológica</h3>
-                    </div>
-                    <div class="focus-card-glass">
-                        <ul>
-                            <li>Diagnóstico tecnológico</li>
-                            <li>Arquitectura de sistemas</li>
-                            <li>Capacitación en IA</li>
-                        </ul>
-                        <p>Asesoría en modernización tecnológica y adopción de herramientas IA.</p>
-                    </div>
-                </article>
-            </div>
-            <div class="focus-rail-hint" aria-hidden="true">
-                <span>Desliza para ver más</span>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </div>
-            </div>
+    <section class="section statement-section">
+      <div class="container statement-layout">
+        <div class="statement-copy reveal">
+          <div class="eyebrow"><span></span> Nuestro principio</div>
+          <h2>No comenzamos por el programa. Comenzamos por el problema.</h2>
         </div>
+
+        <div class="statement-details reveal">
+          <p>
+            Antes de definir pantallas o funciones, estudiamos el flujo de trabajo,
+            la información, los participantes y los puntos donde se pierde tiempo o control.
+            Luego priorizamos un MVP usable y lo evolucionamos con el cliente.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <!-- Proceso -->
-    <section id="proceso" class="section section-cinematic section-process">
-        <div class="section-vignette" aria-hidden="true"></div>
-        <div class="container section-process-inner">
-            <div class="section-header section-header--cinematic reveal" data-reveal>
-                <div class="section-line-accent"></div>
-                <span class="section-label">Cómo trabajamos</span>
-                <h2 class="section-title">Metodología profesional</h2>
-                <p class="section-desc">
-                    No improvisamos. Cada proyecto sigue un proceso documentado donde
-                    primero se define todo el alcance y luego se construye con precisión.
-                </p>
-            </div>
-
-            <div class="process-steps">
-                <div class="process-step reveal" data-reveal style="--reveal-delay: 0ms">
-                    <div class="step-visual step-visual--brief" role="img" aria-label="Brief del proyecto">
-                        <span class="step-badge">1</span>
-                    </div>
-                    <h3>Brief</h3>
-                    <p>Entendemos tu necesidad y definimos los objetivos del proyecto.</p>
-                </div>
-                <div class="process-step reveal" data-reveal style="--reveal-delay: 80ms">
-                    <div class="step-visual step-visual--alcance" role="img" aria-label="Documentación de alcance">
-                        <span class="step-badge">2</span>
-                    </div>
-                    <h3>Alcance</h3>
-                    <p>Documentamos requerimientos, entregables y criterios de aceptación.</p>
-                </div>
-                <div class="process-step reveal" data-reveal style="--reveal-delay: 160ms">
-                    <div class="step-visual step-visual--arquitectura" role="img" aria-label="Arquitectura técnica">
-                        <span class="step-badge">3</span>
-                    </div>
-                    <h3>Arquitectura</h3>
-                    <p>Diseñamos la solución técnica antes de escribir una línea de código.</p>
-                </div>
-                <div class="process-step reveal" data-reveal style="--reveal-delay: 240ms">
-                    <div class="step-visual step-visual--desarrollo" role="img" aria-label="Desarrollo de software">
-                        <span class="step-badge">4</span>
-                    </div>
-                    <h3>Desarrollo</h3>
-                    <p>Construimos con herramientas de IA bajo supervisión humana y control de calidad.</p>
-                </div>
-                <div class="process-step reveal" data-reveal style="--reveal-delay: 320ms">
-                    <div class="step-visual step-visual--entrega" role="img" aria-label="Entrega del proyecto">
-                        <span class="step-badge">5</span>
-                    </div>
-                    <h3>Entrega</h3>
-                    <p>Entregamos con documentación, capacitación y soporte post-lanzamiento.</p>
-                </div>
-            </div>
+    <section class="section products-section" id="proyectos">
+      <span id="productos" class="anchor-alias" aria-hidden="true"></span>
+      <div class="container">
+        <div class="section-head product-led-head reveal">
+          <div>
+            <div class="eyebrow eyebrow-dark"><span></span> Nuestro laboratorio</div>
+            <h2>Productos nacidos de problemas reales.</h2>
+          </div>
+          <p>
+            Soluciones construidas en Maza FinLab para ordenar operaciones, conectar información
+            y convertir tareas técnicas en sistemas claros y trazables.
+          </p>
         </div>
-    </section>
 
-    <!-- Productos -->
-    <section id="productos" class="section section-cinematic section-products">
-        <div class="container">
-            <div class="section-header section-header--cinematic reveal" data-reveal>
-                <div class="section-line-accent"></div>
-                <span class="section-label">Nuestro laboratorio</span>
-                <h2 class="section-title">Productos desarrollados</h2>
-                <p class="section-desc">
-                    Soluciones reales construidas en Maza FinLab: desde bots de trading y páginas web
-                    hasta sistemas de gestión y automatización empresarial.
-                </p>
-            </div>
+        <div class="product-showcase reveal">
+          <div class="product-tabs" role="tablist" aria-label="Productos desarrollados">
+            <button class="product-tab is-active" type="button" role="tab" id="product-tab-hub" aria-selected="true" aria-controls="product-panel-hub">
+              <span class="product-tab-index">01</span>
+              <span><strong>MAZA HUB</strong><small>Plataforma operativa</small></span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <button class="product-tab" type="button" role="tab" id="product-tab-steel" aria-selected="false" aria-controls="product-panel-steel" tabindex="-1">
+              <span class="product-tab-index">02</span>
+              <span><strong>Structural Steel Hub</strong><small>CAD · Plugin</small></span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <button class="product-tab" type="button" role="tab" id="product-tab-grados" aria-selected="false" aria-controls="product-panel-grados" tabindex="-1">
+              <span class="product-tab-index">03</span>
+              <span><strong>Sistema 4 Grados</strong><small>Gestión de trabajos</small></span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <button class="product-tab" type="button" role="tab" id="product-tab-smartbot" aria-selected="false" aria-controls="product-panel-smartbot" tabindex="-1">
+              <span class="product-tab-index">04</span>
+              <span><strong>Maza Smart Bot</strong><small>Trading · IA</small></span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <button class="product-tab" type="button" role="tab" id="product-tab-lab" aria-selected="false" aria-controls="product-panel-lab" tabindex="-1">
+              <span class="product-tab-index">05</span>
+              <span><strong>MAZA LAB</strong><small>Más en desarrollo</small></span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
 
-            <div class="focus-rail-wrap" data-rail-wrap>
-            <div class="focus-rail focus-rail-products" data-focus-rail>
-                <article class="focus-card product-card" data-theme="trading">
-                    <div class="focus-card-bg" aria-hidden="true"></div>
-                    <div class="focus-card-head">
-                        <span class="product-tag">Trading · IA</span>
-                        <h3>Maza Smart Bot</h3>
-                    </div>
-                    <div class="focus-card-glass">
-                        <p>Bot de trading con señales inteligentes, gestión de riesgo y panel de control en tiempo real.</p>
-                    </div>
-                </article>
-
-                <article class="focus-card product-card" data-theme="webcorp">
-                    <div class="focus-card-bg" aria-hidden="true"></div>
-                    <div class="focus-card-head">
-                        <span class="product-tag">Web</span>
-                        <h3>Sitios Corporativos</h3>
-                    </div>
-                    <div class="focus-card-glass">
-                        <p>Páginas web premium para marcas que necesitan presencia profesional y conversión.</p>
-                    </div>
-                </article>
-
-                <article class="focus-card product-card" data-theme="gestion">
-                    <div class="focus-card-bg" aria-hidden="true"></div>
-                    <div class="focus-card-head">
-                        <span class="product-tag">Software</span>
-                        <h3>Sistemas de Gestión</h3>
-                    </div>
-                    <div class="focus-card-glass">
-                        <p>Programas web a medida para órdenes de trabajo, proyectos y operación empresarial.</p>
-                    </div>
-                </article>
-
-                <article class="focus-card product-card" data-theme="automation">
-                    <div class="focus-card-bg" aria-hidden="true"></div>
-                    <div class="focus-card-head">
-                        <span class="product-tag">Automatización</span>
-                        <h3>Flujos Empresariales</h3>
-                    </div>
-                    <div class="focus-card-glass">
-                        <p>Automatización de procesos con integraciones, alertas y reportes para equipos.</p>
-                    </div>
-                </article>
-
-                <article class="focus-card product-card" data-theme="lab">
-                    <div class="focus-card-bg" aria-hidden="true"></div>
-                    <div class="focus-card-head">
-                        <span class="product-tag">Laboratorio</span>
-                        <h3>Más en desarrollo</h3>
-                    </div>
-                    <div class="focus-card-glass">
-                        <p>Licencias, matching de señales y nuevas herramientas que nacen en nuestro laboratorio interno.</p>
-                    </div>
-                </article>
-            </div>
-            <div class="focus-rail-hint" aria-hidden="true">
-                <span>Desliza para ver más</span>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Nosotros -->
-    <section id="nosotros" class="section section-cinematic section-about">
-        <div class="container">
-            <div class="cinematic-split cinematic-split--about">
-                <div class="cinematic-split-content about-text reveal" data-reveal>
-                    <div class="section-line-accent"></div>
-                    <span class="section-label">Quiénes somos</span>
-                    <h2 class="section-title">Tecnología con <em>propósito</em></h2>
-                    <p>
-                        <strong>Maza FinLab SAS</strong> es una empresa de desarrollo de software
-                        legalmente constituida en Cartagena de Indias, Colombia. Nos especializamos
-                        en crear soluciones tecnológicas que generan valor real para negocios y emprendedores.
-                    </p>
-                    <p>
-                        Combinamos metodologías profesionales de gestión de proyectos con herramientas
-                        de inteligencia artificial para entregar software de calidad de forma ágil,
-                        sin sacrificar la planificación ni la documentación.
-                    </p>
-                    <p>
-                        Creemos que la IA acelera la construcción, pero las decisiones importantes —
-                        el alcance, la arquitectura y la visión — las toma el equipo humano.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat-card reveal" data-reveal style="--reveal-delay: 0ms">
-                            <strong>SAS</strong>
-                            <span>Empresa constituida</span>
-                        </div>
-                        <div class="stat-card reveal" data-reveal style="--reveal-delay: 80ms">
-                            <strong data-count="100" data-suffix="%">100%</strong>
-                            <span>Proyectos documentados</span>
-                        </div>
-                        <div class="stat-card reveal" data-reveal style="--reveal-delay: 160ms">
-                            <strong>IA+</strong>
-                            <span>Desarrollo asistido</span>
-                        </div>
-                        <div class="stat-card reveal" data-reveal style="--reveal-delay: 240ms">
-                            <strong>CTG</strong>
-                            <span>Cartagena, Colombia</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="cinematic-split-visual reveal" data-reveal style="--reveal-delay: 120ms">
-                    <img
-                        src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1000&q=85&auto=format&fit=crop"
-                        alt="Espacio de trabajo tecnológico"
-                        loading="lazy"
-                    >
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta-banner section-cinematic reveal" data-reveal>
-        <div class="cta-banner-visual" aria-hidden="true">
-            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&q=80&auto=format&fit=crop" alt="">
-        </div>
-        <div class="container cta-banner-inner">
-            <div class="section-line-accent"></div>
-            <h2>Simple de entender.<br><em>Potente al entregar.</em></h2>
-            <p>Definimos el alcance contigo, construimos con precisión y documentamos cada paso.</p>
-            <a href="#contacto" class="btn btn-primary btn-shine">Solicitar cotización</a>
-        </div>
-    </section>
-
-    <!-- Contacto -->
-    <section id="contacto" class="section section-cinematic contact-section">
-        <div class="container">
-            <div class="section-header section-header--cinematic reveal" data-reveal>
-                <div class="section-line-accent"></div>
-                <span class="section-label">Hablemos</span>
-                <h2 class="section-title">¿Tienes un proyecto en mente?</h2>
-                <p class="section-desc">
-                    Cuéntanos qué necesitas y te responderemos con una propuesta clara.
-                </p>
-            </div>
-
-            <div class="cinematic-split cinematic-split--contact">
-                <div class="contact-info cinematic-split-content reveal" data-reveal>
-                    <h3>Información de contacto</h3>
-                    <div class="contact-item">
-                        <span class="contact-icon" aria-hidden="true">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
-                        </span>
-                        <div>
-                            <strong>Ubicación</strong>
-                            Cartagena de Indias, Colombia
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon" aria-hidden="true">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg>
-                        </span>
-                        <div>
-                            <strong>Empresa</strong>
-                            MAZA FINLAB SAS — NIT 901.936.885
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon" aria-hidden="true">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
-                        </span>
-                        <div>
-                            <strong>Email</strong>
-                            <a href="mailto:contacto@mazafl.com" class="contact-link">contacto@mazafl.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon" aria-hidden="true">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8 8 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8 8 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5z"/></svg>
-                        </span>
-                        <div>
-                            <strong>WhatsApp</strong>
-                            <a href="tel:+573245209070" class="contact-link contact-phone">+57 324 520 9070</a>
-                            <a href="https://wa.me/573245209070" target="_blank" rel="noopener" class="btn btn-whatsapp contact-whatsapp-btn">Escribir por WhatsApp</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-form-wrap cinematic-glass reveal" data-reveal style="--reveal-delay: 100ms">
-                <form
-                    id="contact-form"
-                    class="contact-form"
-                    data-web3forms-key="7de4ede9-4229-48a7-9f96-28e9ca64245e"
-                    data-notify-email="contacto@mazafl.com"
-                    novalidate
-                >
-                    <p class="form-hint">Completa el formulario y te responderemos por correo a la brevedad.</p>
-                    <div class="form-group" data-field="nombre">
-                        <label for="nombre">Nombre completo *</label>
-                        <input type="text" id="nombre" name="name" required placeholder="Tu nombre" autocomplete="name">
-                        <span class="field-error" role="alert"></span>
-                    </div>
-                    <div class="form-group" data-field="email">
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" required placeholder="tu@email.com" autocomplete="email">
-                        <span class="field-error" role="alert"></span>
-                    </div>
-                    <div class="form-group" data-field="telefono">
-                        <label for="telefono">Teléfono / WhatsApp *</label>
-                        <input type="tel" id="telefono" name="phone" required placeholder="Ej: 300 123 4567" autocomplete="tel">
-                        <span class="field-error" role="alert"></span>
-                    </div>
-                    <div class="form-group" data-field="servicio">
-                        <label for="servicio">Servicio de interés</label>
-                        <select id="servicio" name="servicio">
-                            <option value="Desarrollo Web">Desarrollo Web</option>
-                            <option value="Software a Medida">Software a Medida</option>
-                            <option value="Automatización con IA">Automatización con IA</option>
-                            <option value="Consultoría">Consultoría Tecnológica</option>
-                            <option value="Otro">Otro</option>
-                        </select>
-                    </div>
-                    <div class="form-group" data-field="mensaje">
-                        <label for="mensaje">Cuéntanos sobre tu proyecto *</label>
-                        <textarea id="mensaje" name="mensaje" required placeholder="Describe brevemente qué necesitas..."></textarea>
-                        <span class="field-error" role="alert"></span>
-                    </div>
-                    <p class="form-privacy-note">
-                        Al enviar aceptas nuestra
-                        <a href="politica-privacidad.html">política de privacidad</a>.
-                    </p>
-                    <div id="form-feedback" class="form-feedback" role="status" hidden></div>
-                    <button type="submit" class="btn btn-primary btn-shine" id="contact-submit">Enviar consulta</button>
-                </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer footer-cinematic">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="#inicio" class="nav-logo footer-logo">
-                        <img src="assets/logo-maza-finlab.jpg" alt="Maza FinLab">
-                    </a>
-                    <p>
-                        Desarrollo de software con metodología profesional e inteligencia artificial.
-                        Cartagena de Indias, Colombia.
-                    </p>
-                </div>
-                <div>
-                    <h4>Servicios</h4>
-                    <ul>
-                        <li><a href="#servicios">Desarrollo Web</a></li>
-                        <li><a href="#servicios">Software a Medida</a></li>
-                        <li><a href="#servicios">Automatización IA</a></li>
-                        <li><a href="#servicios">Consultoría</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Empresa</h4>
-                    <ul>
-                        <li><a href="#nosotros">Nosotros</a></li>
-                        <li><a href="#proceso">Proceso</a></li>
-                        <li><a href="#productos">Productos</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-                        <li><a href="politica-privacidad.html">Política de privacidad</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="footer-line-accent" aria-hidden="true"></div>
-                <span>&copy; 2026 Maza FinLab SAS. Todos los derechos reservados.</span>
-                <span>
-                    NIT 901.936.885 — Cartagena de Indias, Colombia
-                    · <a href="politica-privacidad.html" class="footer-legal-link">Política de privacidad</a>
+          <div class="product-stage">
+            <article class="product-panel is-active" id="product-panel-hub" role="tabpanel" aria-labelledby="product-tab-hub">
+              <button class="product-visual" type="button" data-lightbox aria-label="Ampliar interfaz de MAZA HUB">
+                <img src="assets/promo/ui-hub.png" alt="Interfaz real de MAZA HUB" loading="lazy">
+                <span class="product-visual-caption">
+                  <span><strong>Centro de operaciones</strong><small>Suite de uso interno y para clientes</small></span>
+                  <b>Producto Maza</b>
                 </span>
-            </div>
-        </div>
-    </footer>
+                <span class="media-zoom-hint" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
+                </span>
+              </button>
+              <div class="product-panel-copy">
+                <span class="product-kicker">Plataforma interna · Operación conectada</span>
+                <h3>MAZA HUB</h3>
+                <p>
+                  Hub operativo con Generador de documentos —fichas, cotizaciones y contratos—
+                  y Gestor de proyectos. Es la misma suite que utilizamos para clientes y laboratorio interno.
+                </p>
+                <ul class="product-capabilities">
+                  <li>Clientes, proyectos y documentos</li>
+                  <li>Fichas, cotizaciones y contratos</li>
+                  <li>Módulos preparados para crecer</li>
+                  <li>Flujos y trazabilidad operativa</li>
+                </ul>
+                <a class="text-link" href="#contacto">Hablar sobre MAZA HUB <span>↗</span></a>
+              </div>
+            </article>
 
-    <script src="js/site-config.js"></script>
-    <script src="js/main.js"></script>
+            <article class="product-panel" id="product-panel-steel" role="tabpanel" aria-labelledby="product-tab-steel" hidden>
+              <button class="product-visual" type="button" data-lightbox aria-label="Ampliar interfaz de Structural Steel Hub">
+                <img src="assets/promo/ui-steel.png" alt="Structural Steel Hub dentro de Autodesk Advance Steel" loading="lazy">
+                <span class="product-visual-caption">
+                  <span><strong>Herramienta de ingeniería digital</strong><small>Dentro del entorno CAD del taller</small></span>
+                  <b>CAD · Plugin</b>
+                </span>
+                <span class="media-zoom-hint" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
+                </span>
+              </button>
+              <div class="product-panel-copy">
+                <span class="product-kicker">CAD · Plugin de ingeniería</span>
+                <h3>Structural Steel Hub</h3>
+                <p>
+                  Plugin para Autodesk Advance Steel: numeración, listas, exportación
+                  y organización de planos dentro del entorno CAD del taller.
+                </p>
+                <ul class="product-capabilities">
+                  <li>Numeración y clasificación de planos</li>
+                  <li>Sincronización MLSP</li>
+                  <li>Clasificación de ensambles</li>
+                  <li>Exportación y documentación técnica</li>
+                </ul>
+                <a class="text-link" href="#contacto">Consultar Structural Steel Hub <span>↗</span></a>
+              </div>
+            </article>
+
+            <article class="product-panel" id="product-panel-grados" role="tabpanel" aria-labelledby="product-tab-grados" hidden>
+              <button class="product-visual" type="button" data-lightbox aria-label="Ampliar interfaz del Sistema 4 Grados">
+                <img src="assets/promo/ui-4grados.png" alt="Interfaz del Sistema 4 Grados" loading="lazy">
+                <span class="product-visual-caption">
+                  <span><strong>Caso empresarial</strong><small>Trazabilidad de órdenes de trabajo</small></span>
+                  <b>Software</b>
+                </span>
+                <span class="media-zoom-hint" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
+                </span>
+              </button>
+              <div class="product-panel-copy">
+                <span class="product-kicker">Software · Gestión de trabajos</span>
+                <h3>Sistema 4 Grados</h3>
+                <p>
+                  Plataforma web para requerimientos, equipos, cotizaciones,
+                  historial de estados y notificación al cliente.
+                </p>
+                <ul class="product-capabilities">
+                  <li>Requerimientos y equipos</li>
+                  <li>Cotizaciones vinculadas</li>
+                  <li>Historial de estados</li>
+                  <li>Notificación y trazabilidad al cliente</li>
+                </ul>
+                <a class="text-link" href="#contacto">Desarrollar un sistema similar <span>↗</span></a>
+              </div>
+            </article>
+
+            <article class="product-panel" id="product-panel-smartbot" role="tabpanel" aria-labelledby="product-tab-smartbot" hidden>
+              <button class="product-visual" type="button" data-lightbox aria-label="Ampliar interfaz de Maza Smart Bot">
+                <img src="assets/promo/ui-smartbot.png" alt="Panel de Maza Smart Bot" loading="lazy">
+                <span class="product-visual-caption">
+                  <span><strong>Producto de laboratorio propio</strong><small>Control y operación en tiempo real</small></span>
+                  <b>Trading · IA</b>
+                </span>
+                <span class="media-zoom-hint" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
+                </span>
+              </button>
+              <div class="product-panel-copy">
+                <span class="product-kicker">Trading · Inteligencia artificial</span>
+                <h3>Maza Smart Bot</h3>
+                <p>
+                  Panel de configuración, operaciones y fiabilidad por índice.
+                  Bot de trading con señales inteligentes, gestión de riesgo y control en tiempo real.
+                </p>
+                <ul class="product-capabilities">
+                  <li>Configuración avanzada</li>
+                  <li>Gestión de riesgo</li>
+                  <li>Tabla de operaciones</li>
+                  <li>Control y fiabilidad por índice</li>
+                </ul>
+                <a class="text-link" href="#contacto">Conocer el laboratorio <span>↗</span></a>
+              </div>
+            </article>
+
+            <article class="product-panel" id="product-panel-lab" role="tabpanel" aria-labelledby="product-tab-lab" hidden>
+              <button class="product-visual" type="button" data-lightbox aria-label="Ampliar productos en desarrollo">
+                <img src="assets/promo/ui-combobot.png" alt="Productos adicionales de MAZA LAB" loading="lazy">
+                <span class="product-visual-caption">
+                  <span><strong>Laboratorio interno</strong><small>Prototipos y productos en evolución</small></span>
+                  <b>MAZA LAB</b>
+                </span>
+                <span class="media-zoom-hint" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
+                </span>
+              </button>
+              <div class="product-panel-copy">
+                <span class="product-kicker">MAZA LAB · Nuevas soluciones</span>
+                <h3>Más en desarrollo</h3>
+                <p>
+                  Licencias, matching de señales y nuevas herramientas que nacen
+                  en nuestro laboratorio interno.
+                </p>
+                <ul class="product-capabilities">
+                  <li>Prototipos funcionales</li>
+                  <li>Licenciamiento de productos</li>
+                  <li>Matching y análisis de señales</li>
+                  <li>Validación y evolución continua</li>
+                </ul>
+                <a class="text-link" href="#contacto">Explorar una idea con nosotros <span>↗</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section method-section" id="metodo">
+      <span id="proceso" class="anchor-alias" aria-hidden="true"></span>
+      <div class="container">
+        <div class="section-head section-head-dark reveal">
+          <div>
+            <div class="eyebrow"><span></span> Método de trabajo</div>
+            <h2>Un proceso claro desde el diagnóstico hasta la evolución.</h2>
+          </div>
+          <p>
+            El proyecto se organiza en etapas verificables para reducir incertidumbre
+            y mantener el control sobre cada entrega.
+          </p>
+        </div>
+
+        <div class="method-list">
+          <article class="reveal">
+            <div class="method-number">01</div>
+            <div>
+              <h3>Diagnóstico</h3>
+              <p>Comprendemos el proceso, los usuarios, los documentos y el objetivo principal.</p>
+            </div>
+          </article>
+
+          <article class="reveal">
+            <div class="method-number">02</div>
+            <div>
+              <h3>Diseño y alcance</h3>
+              <p>Definimos arquitectura, interfaz, prioridades, entregables y límites de la primera etapa.</p>
+            </div>
+          </article>
+
+          <article class="reveal">
+            <div class="method-number">03</div>
+            <div>
+              <h3>Desarrollo y pruebas</h3>
+              <p>Construimos módulos funcionales, revisamos resultados y corregimos antes de avanzar.</p>
+            </div>
+          </article>
+
+          <article class="reveal">
+            <div class="method-number">04</div>
+            <div>
+              <h3>Implementación y evolución</h3>
+              <p>Preparamos el uso real, el soporte y las ampliaciones futuras del sistema.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section company-section" id="empresa">
+      <span id="nosotros" class="anchor-alias" aria-hidden="true"></span>
+      <div class="container company-layout">
+        <div class="company-copy reveal">
+          <div class="eyebrow eyebrow-dark"><span></span> MAZA FINLAB</div>
+          <h2>Conocimiento técnico con visión de producto.</h2>
+          <p>
+            Combinamos programación, diseño industrial, procesos empresariales
+            y experiencia en documentación técnica para desarrollar herramientas útiles y sostenibles.
+          </p>
+
+          <a class="text-link" href="#contacto">Conversemos sobre tu proceso <span>↗</span></a>
+        </div>
+
+        <div class="company-values">
+          <article class="reveal">
+            <span>01</span>
+            <div>
+              <h3>Claridad</h3>
+              <p>Alcance, prioridades y estado del proyecto comunicados con precisión.</p>
+            </div>
+          </article>
+
+          <article class="reveal">
+            <span>02</span>
+            <div>
+              <h3>Adaptabilidad</h3>
+              <p>La solución se ajusta al flujo real y puede crecer por módulos.</p>
+            </div>
+          </article>
+
+          <article class="reveal">
+            <span>03</span>
+            <div>
+              <h3>Responsabilidad técnica</h3>
+              <p>Funciones reales, pruebas controladas y decisiones fundamentadas.</p>
+            </div>
+          </article>
+
+          <article class="reveal">
+            <span>04</span>
+            <div>
+              <h3>Visión de futuro</h3>
+              <p>Construimos pensando en mantenimiento, integración y evolución.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-band-inner reveal">
+        <div>
+          <span>¿Necesitas ordenar un proceso de tu empresa?</span>
+          <h2>Cuéntanos cómo trabajan hoy y qué quieren mejorar.</h2>
+        </div>
+        <a class="button button-light" href="#contacto">Evaluar el proyecto</a>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacto">
+      <div class="container contact-layout">
+        <div class="contact-copy reveal">
+          <div class="eyebrow eyebrow-dark"><span></span> Contacto</div>
+          <h2>Cuéntanos qué necesitas mejorar.</h2>
+          <p>
+            Describe brevemente el proceso actual, la dificultad principal
+            y el resultado que esperas obtener.
+          </p>
+
+          <div class="contact-info">
+            <h3>Información de contacto</h3>
+
+            <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              </span>
+              <div>
+                <strong>Ubicación</strong>
+                <span>Cartagena de Indias, Colombia</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg>
+              </span>
+              <div>
+                <strong>Empresa</strong>
+                <span>MAZA FINLAB SAS — NIT 901.936.885</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+              </span>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:contacto@mazafl.com" class="contact-link">contacto@mazafl.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8 8 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8 8 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5z"/></svg>
+              </span>
+              <div>
+                <strong>WhatsApp</strong>
+                <a href="tel:+573245209070" class="contact-link contact-phone">+57 324 520 9070</a>
+                <a href="https://wa.me/573245209070" target="_blank" rel="noopener" class="button button-whatsapp contact-whatsapp-btn">Escribir por WhatsApp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form
+          class="contact-form reveal"
+          id="project-form"
+          data-web3forms-key="7de4ede9-4229-48a7-9f96-28e9ca64245e"
+          data-notify-email="contacto@mazafl.com"
+          novalidate
+        >
+          <div class="form-grid">
+            <label>
+              <span>Nombre</span>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" required>
+            </label>
+
+            <label>
+              <span>Empresa</span>
+              <input type="text" id="empresa" name="empresa" placeholder="Nombre de la empresa" autocomplete="organization">
+            </label>
+
+            <label>
+              <span>Correo</span>
+              <input type="email" id="correo" name="correo" placeholder="correo@empresa.com" autocomplete="email" required>
+            </label>
+
+            <label>
+              <span>Teléfono / WhatsApp</span>
+              <input type="tel" id="telefono" name="telefono" placeholder="300 123 4567" autocomplete="tel" required>
+            </label>
+
+            <label>
+              <span>Servicio</span>
+              <select id="servicio" name="servicio">
+                <option>Software a medida</option>
+                <option>Automatización empresarial</option>
+                <option>Desarrollo web</option>
+                <option>Gestión documental</option>
+                <option>Ingeniería digital</option>
+                <option>Structural Steel Hub</option>
+                <option>Otro requerimiento</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="form-message">
+            <span>Proceso o necesidad</span>
+            <textarea id="mensaje" name="mensaje" rows="6" placeholder="¿Cómo trabajan actualmente y qué quisieran mejorar?" required></textarea>
+          </label>
+
+          <button class="button button-primary button-full" id="contact-submit" type="submit">
+            Solicitar evaluación
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+          </button>
+
+          <p class="form-note">
+            Al enviar aceptas nuestra <a href="politica-privacidad.html">política de privacidad</a>.
+            Te responderemos a <strong>contacto@mazafl.com</strong>.
+          </p>
+          <div id="form-feedback" class="form-feedback" role="status" aria-live="polite" hidden></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer site-footer-grid">
+    <div class="container">
+      <div class="footer-grid-v3">
+        <div class="footer-brand-v3">
+          <a href="#inicio" class="brand">
+            <img src="assets/logo-maza-finlab.jpg" alt="Maza FinLab">
+          </a>
+          <p>
+            Desarrollo de software con metodología profesional e inteligencia artificial.
+            Cartagena de Indias, Colombia.
+          </p>
+          <div class="footer-socials" aria-label="Redes sociales de Maza FinLab">
+            <a
+              class="footer-social-link"
+              href="https://www.facebook.com/profile.php?id=61588729493982"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Maza FinLab en Facebook"
+              title="Facebook"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 8h3V4h-3c-3.3 0-5 2-5 5v2H6v4h3v6h4v-6h3.4l.6-4h-4V9c0-.7.3-1 1-1z"/>
+              </svg>
+              <span>Facebook</span>
+            </a>
+            <span
+              class="footer-social-link is-disabled"
+              role="link"
+              aria-disabled="true"
+              aria-label="Instagram, próximamente"
+              title="Instagram — próximamente"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="1"/>
+              </svg>
+              <span>Instagram</span>
+            </span>
+            <span
+              class="footer-social-link is-disabled"
+              role="link"
+              aria-disabled="true"
+              aria-label="LinkedIn, próximamente"
+              title="LinkedIn — próximamente"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 9v11M6 5.5v.01M10.5 20v-6.2c0-2.4 1.5-4.3 3.8-4.3s3.7 1.5 3.7 4.5v6M10.5 10v10"/>
+              </svg>
+              <span>LinkedIn</span>
+            </span>
+          </div>
+        </div>
+        <div>
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="#servicios">Desarrollo web</a></li>
+            <li><a href="#servicios">Software a medida</a></li>
+            <li><a href="#servicios">Automatización</a></li>
+            <li><a href="#servicios">Ingeniería digital</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#empresa">Nosotros</a></li>
+            <li><a href="#metodo">Método</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="politica-privacidad.html">Política de privacidad</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom-v3">
+        <div class="footer-line-accent" aria-hidden="true"></div>
+        <span>&copy; <span id="current-year">2026</span> Maza FinLab SAS. Todos los derechos reservados.</span>
+        <span>
+          NIT 901.936.885 — Cartagena de Indias, Colombia
+          · <a href="politica-privacidad.html">Política de privacidad</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button type="button" class="lightbox-close" aria-label="Cerrar imagen">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <img class="lightbox-image" src="" alt="">
+  </div>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/main-v6.js"></script>
 </body>
 </html>
