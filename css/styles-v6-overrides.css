@@ -721,6 +721,45 @@
   color: var(--blue-600);
 }
 
+.main-nav .nav-store-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 13px;
+  border: 1px solid rgba(104, 174, 239, 0.38);
+  border-radius: 10px;
+  color: #fff;
+  background: rgba(47, 128, 237, 0.14);
+}
+
+.main-nav .nav-store-link::after {
+  display: none;
+}
+
+.main-nav .nav-store-link:hover,
+.main-nav .nav-store-link:focus-visible {
+  color: #fff;
+  border-color: rgba(104, 174, 239, 0.72);
+  background: rgba(47, 128, 237, 0.28);
+  outline: none;
+}
+
+.main-nav .nav-store-link span {
+  font-size: 14px;
+  transition: transform 0.2s ease;
+}
+
+.main-nav .nav-store-link:hover span {
+  transform: translate(2px, -2px);
+}
+
+@media (max-width: 760px) {
+  .main-nav .nav-store-link {
+    justify-content: center;
+    padding: 13px 22px;
+  }
+}
+
 /* Redes sociales del pie de página */
 .footer-socials {
   display: flex;

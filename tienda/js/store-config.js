@@ -6,8 +6,7 @@
  * (también define BASE_URL igual en variables Railway).
  */
 window.MAZA_STORE_CONFIG = {
-  // Placeholder: actualizar cuando Railway esté online
-  apiBase: 'https://mazafl-tienda-api.up.railway.app',
+  apiBase: 'https://mazafl-tienda-api-production.up.railway.app',
   siteUrl: 'https://mazafl.com',
   contactEmail: 'contacto@mazafl.com',
   supportWhatsApp: '573245209070',
