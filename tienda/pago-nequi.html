@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pagar con Nequi | MAZA Smart Bot</title>
+  <link rel="icon" href="../assets/logo-maza-finlab.jpg" type="image/jpeg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles-v6.css">
+  <link rel="stylesheet" href="../css/styles-v6-overrides.css">
+  <link rel="stylesheet" href="css/store.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html#inicio">
+        <img src="../assets/logo-maza-finlab.jpg" alt="Maza FinLab">
+        <span class="brand-wordmark brand-wordmark-simple"><strong>Maza FinLab</strong></span>
+      </a>
+      <nav class="main-nav"><a href="adquirir.html">Cambiar método</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="store-section" style="padding-top:120px">
+      <div class="container" style="max-width:560px">
+        <div class="store-panel">
+          <h2>Pago con Nequi</h2>
+          <p>Transfiere el equivalente a USD $150 y sube el comprobante. Activamos en máximo 24 horas.</p>
+
+          <div class="nequi-box">
+            <strong>Datos de pago</strong>
+            <span>Nequi: configura el número real en Railway (`NEQUI_NUMBER`) y reemplaza el QR en `tienda/qr-nequi.jpeg`.</span>
+            <img src="qr-nequi.jpeg" alt="Código QR Nequi" onerror="this.style.display='none'">
+          </div>
+
+          <form id="nequi-form" class="store-form" style="margin-top:18px" enctype="multipart/form-data">
+            <label>
+              Nombre completo
+              <input name="nombre" type="text" required autocomplete="name">
+            </label>
+            <label>
+              Correo (mismo de Deriv)
+              <input name="email" type="email" required autocomplete="email">
+            </label>
+            <label>
+              Comprobante (JPG/PNG/PDF)
+              <input name="comprobante" type="file" accept="image/*,.pdf" required>
+            </label>
+            <button class="button button-primary" type="submit">Enviar comprobante</button>
+          </form>
+          <div id="nequi-feedback" class="store-feedback" hidden></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/store-config.js"></script>
+  <script src="js/store.js"></script>
+</body>
+</html>

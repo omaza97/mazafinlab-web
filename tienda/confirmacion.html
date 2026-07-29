@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Licencia lista | Maza FinLab</title>
+  <link rel="icon" href="../assets/logo-maza-finlab.jpg" type="image/jpeg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles-v6.css">
+  <link rel="stylesheet" href="../css/styles-v6-overrides.css">
+  <link rel="stylesheet" href="css/store.css">
+</head>
+<body>
+  <main>
+    <section class="store-section" style="padding-top:120px;min-height:80vh">
+      <div class="container store-confirm">
+        <div class="eyebrow eyebrow-dark"><span></span> Listo</div>
+        <h1>Tu licencia está activa</h1>
+        <p>También la enviamos a <strong id="confirm-email">tu correo</strong>.</p>
+        <div class="license-box" id="license-key">—</div>
+        <div class="store-card-actions" style="justify-content:center">
+          <a class="button button-primary" id="download-bot" href="#">Descargar instalador</a>
+          <a class="button button-secondary" href="./">Volver a la tienda</a>
+        </div>
+        <p class="store-note">Soporte: <a href="mailto:contacto@mazafl.com">contacto@mazafl.com</a></p>
+      </div>
+    </section>
+  </main>
+  <script src="js/store-config.js"></script>
+  <script src="js/store.js"></script>
+  <script>
+    document.getElementById('download-bot')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      const base = (window.MAZA_STORE_CONFIG.apiBase || '').replace(/\/$/, '');
+      window.location.href = `${base}/download/maza-smart-bot`;
+    });
+  </script>
+</body>
+</html>

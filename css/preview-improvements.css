@@ -1,0 +1,265 @@
+/* Vista previa aislada: mejoras propuestas para Maza FinLab */
+
+:root {
+  --container: 1280px;
+}
+
+.preview-badge {
+  position: fixed;
+  left: 18px;
+  bottom: 18px;
+  z-index: 190;
+  padding: 8px 12px;
+  border: 1px solid rgba(104, 174, 239, .3);
+  border-radius: 999px;
+  background: rgba(4, 16, 29, .88);
+  color: #a9c9e8;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .24);
+  backdrop-filter: blur(14px);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+/* El ancho crece, pero los textos conservan una medida cómoda de lectura. */
+.section-head > p,
+.hero-lead,
+.product-panel-copy p,
+.method-list p,
+.company-copy p {
+  text-wrap: pretty;
+}
+
+.hero-layout {
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  gap: clamp(54px, 5vw, 84px);
+}
+
+.hero-copy h1 {
+  max-width: 680px;
+}
+
+.hero-points {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  max-width: 650px;
+  margin-top: 34px;
+}
+
+.hero-points div {
+  display: grid;
+  gap: 5px;
+  min-height: 72px;
+  padding: 13px 14px;
+  border: 1px solid rgba(151, 192, 235, .13);
+  border-radius: 13px;
+  background: rgba(255, 255, 255, .025);
+}
+
+.hero-points strong {
+  display: block;
+  color: var(--blue-400);
+  font-family: Manrope, Inter, sans-serif;
+  font-size: 12px;
+  letter-spacing: .08em;
+}
+
+.hero-points span {
+  display: block;
+  color: #becddb;
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.hero-points span::before {
+  display: none;
+}
+
+/* El método se lee como una secuencia conectada, no como cuatro filas sueltas. */
+.method-list {
+  position: relative;
+  border-top: 0;
+}
+
+.method-list::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  bottom: 35px;
+  left: 29px;
+  width: 1px;
+  background: linear-gradient(var(--blue-400), rgba(104, 174, 239, .1));
+}
+
+.method-list article {
+  position: relative;
+  grid-template-columns: 60px 1fr;
+  gap: 28px;
+  padding: 24px 12px 24px 0;
+}
+
+.method-list article:hover {
+  padding-left: 0;
+}
+
+.method-number {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: 58px;
+  height: 58px;
+  place-items: center;
+  border: 1px solid rgba(104, 174, 239, .3);
+  border-radius: 50%;
+  background: #071625;
+  box-shadow: 0 0 0 7px #071625;
+  font-size: 11px;
+}
+
+/* CTA más concreto y con dos caminos de conversión. */
+.cta-band {
+  position: relative;
+  overflow: hidden;
+  padding: 56px 0;
+}
+
+.cta-band::after {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  right: -130px;
+  top: -210px;
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: 50%;
+  box-shadow: 0 0 0 55px rgba(255, 255, 255, .025);
+  pointer-events: none;
+}
+
+.cta-band-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-band h2 {
+  max-width: 790px;
+}
+
+.cta-band p {
+  max-width: 700px;
+  margin: 13px 0 0;
+  color: rgba(255, 255, 255, .76);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.cta-band-actions {
+  display: grid;
+  flex: 0 0 auto;
+  justify-items: center;
+  gap: 13px;
+}
+
+.cta-whatsapp-link {
+  color: rgba(255, 255, 255, .88);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.cta-whatsapp-link:hover {
+  color: #fff;
+}
+
+.whatsapp-float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 180;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 48px;
+  padding: 0 17px;
+  border: 1px solid rgba(255, 255, 255, .2);
+  border-radius: 999px;
+  background: #20b95a;
+  color: #fff;
+  box-shadow: 0 16px 40px rgba(4, 16, 29, .35);
+  font-size: 12px;
+  font-weight: 700;
+  transition: transform .2s ease, background .2s ease;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-3px);
+  background: #18a94f;
+}
+
+@media (max-width: 1080px) {
+  .hero-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-band-inner {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero-points {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-points div {
+    min-height: 0;
+  }
+
+  .cta-band-inner {
+    display: grid;
+    gap: 28px;
+  }
+
+  .cta-band-actions {
+    justify-items: start;
+  }
+}
+
+@media (max-width: 560px) {
+  .preview-badge {
+    display: none;
+  }
+
+  .method-list::before {
+    left: 22px;
+  }
+
+  .method-list article {
+    grid-template-columns: 46px 1fr;
+    gap: 18px;
+  }
+
+  .method-number {
+    width: 44px;
+    height: 44px;
+  }
+
+  .whatsapp-float {
+    right: 14px;
+    bottom: 14px;
+    width: 50px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .whatsapp-float span {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-float {
+    transition: none;
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Probar MAZA Smart Bot 24h</title>
+  <link rel="icon" href="../assets/logo-maza-finlab.jpg" type="image/jpeg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles-v6.css">
+  <link rel="stylesheet" href="../css/styles-v6-overrides.css">
+  <link rel="stylesheet" href="css/store.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html#inicio">
+        <img src="../assets/logo-maza-finlab.jpg" alt="Maza FinLab">
+        <span class="brand-wordmark brand-wordmark-simple"><strong>Maza FinLab</strong></span>
+      </a>
+      <nav class="main-nav"><a href="smart-bot.html">Smart Bot</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="store-section" style="padding-top:120px">
+      <div class="container" style="max-width:520px">
+        <div class="store-panel">
+          <h2>Prueba gratuita 24 horas</h2>
+          <p>Recibirás una licencia temporal por correo. Usa el mismo email de tu cuenta Deriv.</p>
+          <form id="trial-form" class="store-form">
+            <label>
+              Nombre
+              <input name="nombre" type="text" required autocomplete="name">
+            </label>
+            <label>
+              Correo
+              <input name="email" type="email" required autocomplete="email">
+            </label>
+            <button class="button button-primary" type="submit">Activar prueba</button>
+          </form>
+          <div id="trial-feedback" class="store-feedback" hidden></div>
+          <p class="store-note">Si te convence, <a href="adquirir.html">adquiere la licencia de 6 meses</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/store-config.js"></script>
+  <script src="js/store.js"></script>
+</body>
+</html>

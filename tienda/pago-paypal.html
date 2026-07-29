@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pagar con PayPal | MAZA Smart Bot</title>
+  <link rel="icon" href="../assets/logo-maza-finlab.jpg" type="image/jpeg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles-v6.css">
+  <link rel="stylesheet" href="../css/styles-v6-overrides.css">
+  <link rel="stylesheet" href="css/store.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html#inicio">
+        <img src="../assets/logo-maza-finlab.jpg" alt="Maza FinLab">
+        <span class="brand-wordmark brand-wordmark-simple"><strong>Maza FinLab</strong></span>
+      </a>
+      <nav class="main-nav"><a href="adquirir.html">Cambiar método</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="store-section" style="padding-top:120px">
+      <div class="container" style="max-width:520px">
+        <div class="store-panel">
+          <h2>Pago con PayPal</h2>
+          <p>MAZA Smart Bot — licencia 6 meses · USD $150</p>
+          <div class="store-form">
+            <label>
+              Nombre completo
+              <input id="paypal-nombre" type="text" autocomplete="name" required placeholder="Tu nombre">
+            </label>
+            <label>
+              Correo (mismo de Deriv)
+              <input id="paypal-email" type="email" autocomplete="email" required placeholder="correo@ejemplo.com">
+            </label>
+          </div>
+          <div id="paypal-buttons" style="margin-top:18px"></div>
+          <div id="paypal-feedback" class="store-feedback" hidden></div>
+          <p class="store-note">Al pagar aceptas el uso personal e intransferible de la licencia.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/store-config.js"></script>
+  <script src="js/store.js"></script>
+</body>
+</html>

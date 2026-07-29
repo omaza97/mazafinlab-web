@@ -706,6 +706,21 @@
   position: relative;
 }
 
+.product-panel-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 22px;
+  margin-top: 8px;
+}
+
+.text-link-muted {
+  color: #6b7c90;
+}
+
+.text-link-muted:hover {
+  color: var(--blue-600);
+}
+
 /* Redes sociales del pie de página */
 .footer-socials {
   display: flex;
