@@ -248,7 +248,7 @@
     const notifyEmail =
       window.MAZA_SITE_CONFIG?.notifyEmail?.trim() ||
       form.dataset.notifyEmail?.trim() ||
-      'contacto@mazafl.com';
+      'comercial@mazafl.com';
 
     if (!accessKey || accessKey === 'CONFIGURA_TU_ACCESS_KEY' || accessKey === 'TU_ACCESS_KEY') {
       showFeedback(`Web3Forms no configurado. Escríbenos a ${notifyEmail} o por WhatsApp.`, false);

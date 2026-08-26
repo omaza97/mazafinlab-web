@@ -798,9 +798,15 @@
   stroke-linejoin: round;
 }
 
-.footer-social-link:first-child svg {
+.footer-social-link[title="Facebook"] svg,
+.footer-social-link[title="LinkedIn"] svg {
   fill: currentColor;
   stroke: none;
+}
+
+.footer-social-link[title="Instagram"] svg {
+  fill: none;
+  stroke: currentColor;
 }
 
 .footer-social-link[href]:hover,

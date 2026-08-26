@@ -5,21 +5,7 @@
 }
 
 .preview-badge {
-  position: fixed;
-  left: 18px;
-  bottom: 18px;
-  z-index: 190;
-  padding: 8px 12px;
-  border: 1px solid rgba(104, 174, 239, .3);
-  border-radius: 999px;
-  background: rgba(4, 16, 29, .88);
-  color: #a9c9e8;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, .24);
-  backdrop-filter: blur(14px);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: .09em;
-  text-transform: uppercase;
+  display: none !important;
 }
 
 /* El ancho crece, pero los textos conservan una medida cómoda de lectura. */

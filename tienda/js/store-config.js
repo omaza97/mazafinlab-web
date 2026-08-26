@@ -8,7 +8,7 @@
 window.MAZA_STORE_CONFIG = {
   apiBase: 'https://mazafl-tienda-api-production.up.railway.app',
   siteUrl: 'https://mazafl.com',
-  contactEmail: 'contacto@mazafl.com',
+  contactEmail: 'comercial@mazafl.com',
   supportWhatsApp: '573245209070',
   paypalClientId: '', // Se obtiene de GET /api/config
   products: {

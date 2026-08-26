@@ -164,7 +164,7 @@
               });
               window.location.href = `confirmacion.html?${params.toString()}`;
             } catch (err) {
-              showFeedback(feedback, err.message || 'Pago capturado pero falló la licencia. Escríbenos a contacto@mazafl.com.', false);
+              showFeedback(feedback, err.message || 'Pago capturado pero falló la licencia. Escríbenos a comercial@mazafl.com.', false);
             }
           },
           onError: () => showFeedback(feedback, 'Error en PayPal. Intenta de nuevo o usa Nequi.', false)

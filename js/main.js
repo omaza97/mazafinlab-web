@@ -170,7 +170,7 @@ function initContactForm() {
         const accessKey = getWeb3FormsKey(form);
         const notifyEmail = window.MAZA_SITE_CONFIG?.notifyEmail
             || form.dataset.notifyEmail
-            || 'contacto@mazafl.com';
+            || 'comercial@mazafl.com';
 
         const subject = `Consulta web — ${servicio}`;
         const bodyText =
@@ -229,7 +229,7 @@ function initContactForm() {
         } catch (error) {
             showFormFeedback(
                 form,
-                error.message || 'Error al enviar. Escríbenos por WhatsApp o a contacto@mazafl.com.',
+                error.message || 'Error al enviar. Escríbenos por WhatsApp o a comercial@mazafl.com.',
                 'error'
             );
         } finally {
